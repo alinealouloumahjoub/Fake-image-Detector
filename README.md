@@ -4,7 +4,7 @@ A deep learning project that automatically detects whether an image is a **real 
 
 ---
 
-## 👥 Authors
+## Authors
 
 | Name | Role |
 |---|---|
@@ -110,7 +110,7 @@ _model.pkl       _general.pkl
 | Validation | 1,500 | 7,500 | 9,000 |
 | Test | 7,500 | 37,500 | 45,000 |
 
->  Class imbalance handled via `CrossEntropyLoss(weight=[1.0, 5.0])` — penalizes REAL mistakes 5× more.
+>  Class imbalance handled via `CrossEntropyLoss(weight=[1.0, 5.0])` it penalizes REAL mistakes 5× more.
 
 ---
 
@@ -148,9 +148,9 @@ We tested 3 values for 3 epochs each:
 
 | LR | Result |
 |---|---|
-| 1e-3 | Too fast — unstable |
+| 1e-3 | Too fast ( unstable) |
 | **1e-4** | **Best stable and accurate** |
-| 1e-5 | Too slow — underfitting |
+| 1e-5 | Too slow ( underfitting) |
 
 ---
 
@@ -264,7 +264,7 @@ For fake scenes: model focuses on **background textures, lighting inconsistencie
 | Generator | Face Model | Scene Model |
 |---|---|---|
 | StyleGAN faces | Detected | — |
-| Stable Diffusion 2.1/XL/3 | Not trained | ✅ Detected |
+| Stable Diffusion 2.1/XL/3 | Not trained | Detected |
 | DALL-E 3 | Not trained |  Detected |
 | Midjourney v6 |  Not trained |  Detected |
 | Gemini / Adobe Firefly / Flux |  Not in training data |  Not in training data |
@@ -273,7 +273,7 @@ For fake scenes: model focuses on **background textures, lighting inconsistencie
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -289,7 +289,7 @@ For fake scenes: model focuses on **background textures, lighting inconsistencie
 
 ---
 
-## 📚 References
+## References
 
 - [EfficientNet: Rethinking Model Scaling for CNNs](https://arxiv.org/abs/1905.11946)
 - [140K Real and Fake Faces — xhlulu](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)
